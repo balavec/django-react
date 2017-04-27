@@ -1,9 +1,16 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load staticfiles %}
 
 {% block page_container %}
 
             <h1>{{ page_title }}</h1>
 
             <div id="app"></div>
+
+{% endblock %}
+
+
+{% block js_container %}
+
+<script src="{% static "js/scripts.min.js" %}"></script>
 
 {% endblock %}
